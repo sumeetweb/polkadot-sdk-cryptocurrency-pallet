@@ -162,7 +162,7 @@ impl pallet_transaction_payment::Config for Runtime {
 // Implements the types required for the template pallet.
 impl pallet_minimal_template::Config for Runtime {
 	type RuntimeEvent = RuntimeEvent;
-	// type MaxCallCount<T> = Get<u32>;
+	type MaxCallCount = ConstU32<10>;
 }
 
 type Block = frame::runtime::types_common::BlockOf<Runtime, SignedExtra>;

@@ -14,6 +14,6 @@ cargo doc -p minimal-template --open
 
 Building chainspec:
 ```sh
-chain-spec-builder -c ./chainspec.json create -n custom-runtime -i custom-runtime -r ./target/release/wbuild/minimal-template-runtime/minimal_template_runtime.compact
-.wasm -s default
+chain-spec-builder -c chainspec.json create --chain-name Sumeet --chain-id sumeet -r ./target/debug/wbuild/minimal-template-runtime/minimal_template_runtime.wasm default
 ```
+
